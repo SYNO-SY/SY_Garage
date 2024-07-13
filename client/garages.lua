@@ -91,7 +91,7 @@ CreateThread(function()
         SetBlipAsShortRange(blip, true)
 
         BeginTextCommandSetBlipName("STRING")
-        AddTextComponentSubstringPlayerName('Garage')
+        AddTextComponentSubstringPlayerName(locale('ui_heading'))
         EndTextCommandSetBlipName(blip)
     end
 end)

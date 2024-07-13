@@ -71,7 +71,7 @@ CreateThread(function()
         SetBlipAsShortRange(blip, true)
 
         BeginTextCommandSetBlipName("STRING")
-        AddTextComponentSubstringPlayerName('Impounds')
+        AddTextComponentSubstringPlayerName(locale('ui_iv_heading'))
         EndTextCommandSetBlipName(blip)
     end
 end)

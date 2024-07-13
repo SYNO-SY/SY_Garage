@@ -47,13 +47,13 @@ RegisterNUICallback('impound_pay', function(data, cb)
   OpenNui(false)
   local vehiclenow = GetVehiclePedIsIn(PlayerPedId(), true)
   if DoesEntityExist(vehiclenow) then
-    Notification('SY_Garage', "Vehicle Already Out", 'error', 5000, false)
+    Notification('SY_Garage', locale('veh_already_out'), 'error', 5000, false)
   elseif not DoesEntityExist(vehiclenow) then
     lib.callback('SY_Garage:hasEnoughMoney', false, function(hasCash)
       if hasCash then
         SpawnVehicle('impound', data)
       else
-        Notification('SY_Garage', "Not enough cash to pay for impound", 'error', 5000, false)
+        Notification('SY_Garage', locale('not_enough_cash'), 'error', 5000, false)
       end
     end, data.Fine)
   end

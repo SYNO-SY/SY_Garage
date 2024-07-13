@@ -10,7 +10,8 @@
   "ui_specification": "Specification",
   "ui_take_out": "Take Out",
   "ui_share_key": "Share Key",
-  "ui_iv_heading": "Impound Form",
+  "ui_iv_form_heading": "Impound Form",
+  "ui_iv_heading": "Impound",
   "ui_iv_pay": "Pay and Spawn the vehicle",
   "ui_fine_text": "Fine",
 
@@ -20,5 +21,12 @@
   "store_veh": "Press [G] to store the vehicle.",
   "veh_spawned": "vehicle has been released from the Garage.",
   "veh_blocked": "Unable to retrieve vehicle, Please try again!",
-  "veh_stored": "Vehicle stored successfully."
+  "veh_stored": "Vehicle stored successfully.",
+  "veh_already_out": "Vehicle is already out",
+  "not_enough_cash": "Not enough cash to pay for impound",
+  "0_sec_left": "0 seconds left",
+  "seconds": " seconds",
+  "minutes": " minutes",
+  "hours": " hours",
+  "days": " days"
 }

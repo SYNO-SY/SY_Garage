@@ -27,8 +27,9 @@ function Notification(title, msg, type, time, Isserver)
             duration = time,
             style = {
                 borderRadius = 18,
-                backgroundColor = '#2BDD66',
-                color = 'black'
+                -- backgroundColor = '#2BDD66',
+                backgroundColor = '#6B31B2',
+                color = 'white'
             }
         })
     end

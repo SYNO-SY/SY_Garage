@@ -28,8 +28,8 @@ debugData([
   {
     action: "vehicledata",
     data: {
-      // type: "impound",
-      type: "garage",
+      type: "impound",
+      // type: "garage",
       vehiclesList: [
         {
           title: "SULTAN",
