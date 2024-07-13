@@ -3,7 +3,7 @@ game "gta5"
 
 description "Advanced garage script"
 author "SYNO"
-version '1.0.0'
+version '0.1.0'
 
 lua54 'yes'
 
