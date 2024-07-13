@@ -39,6 +39,10 @@ jobs:
           cp -r ./{client,locales,server,shared} ./temp/SY_Garage
           cp -r ./web/build ./temp/SY_Garage/web/
           cd ./temp && zip -r ../SY_Garage.zip ./SY_Garage
+      - name: Bump manifest version
+        run: node .github/actions/bump-manifest-version.js
+        env:
+          TGT_RELEASE_VERSION: ${{ github.ref_name }}
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
         with:
