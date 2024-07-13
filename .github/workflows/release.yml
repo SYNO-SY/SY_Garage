@@ -1,8 +1,8 @@
 name: Tagged Release
 on:
   push:
-    branches:
-      - "main"
+    tags:
+      - "v*"
 jobs:
   create-tagged-release:
     name: Create Release
@@ -19,12 +19,12 @@ jobs:
       - name: "Setup Node.js"
         uses: "actions/setup-node@v1"
         with:
-          node-version: 14.x
+          node-version: 20.x
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: "${{ secrets.TOKEN }}"
-          title: ${{ env.RELEASE_VERSION }}
+          title: React/Lua Boilerplate - ${{ steps.get_tag.outputs.VERSION_TAG }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           files: SY_Garage.zip
         id: auto_release
