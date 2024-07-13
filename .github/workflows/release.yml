@@ -20,6 +20,16 @@ jobs:
         uses: "actions/setup-node@v1"
         with:
           node-version: 20.x
+      - name: Run build
+        run: pnpm build
+        working-directory: web
+        env:
+          CI: false
+      - name: Bundle files
+        run: |
+          mkdir -p ./temp/SY_Garage/web/
+          cp -r ./web/build ./temp/SY_Garage/web/
+          cd ./temp && zip -r ../SY_Garage.zip ./SY_Garage
       - name: Create release
         uses: marvinpinto/action-automatic-releases@latest
         with:
