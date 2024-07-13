@@ -1,0 +1,16 @@
+{
+    "cSpell.words": [
+        "handleclose",
+        "setveh"
+    ],
+    "Lua.diagnostics.globals": [
+        "lib",
+        "cache",
+        "state",
+        "isMenuOpen",
+        "MySQL",
+        "vehiclesList",
+        "vehicleData",
+        "locale"
+    ]
+}

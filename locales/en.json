@@ -1,0 +1,24 @@
+{
+  "ui_heading": "garage",
+  "ui_back": "Back",
+  "ui_select": "Select",
+  "ui_text_speed": "Speed",
+  "ui_text_fuel": "Fuel",
+  "ui_text_engine": "Engine Health",
+  "ui_text_body": "Body Health",
+  "ui_plate": "Plate",
+  "ui_specification": "Specification",
+  "ui_take_out": "Take Out",
+  "ui_share_key": "Share Key",
+  "ui_iv_heading": "Impound Form",
+  "ui_iv_pay": "Pay and Spawn the vehicle",
+  "ui_fine_text": "Fine",
+
+  "not_owning_veh": "You do not own this vehicle!",
+  "access_garage": "Press [E] to access the car Garage.",
+  "access_impound": "Press [E] to access the car Impound",
+  "store_veh": "Press [G] to store the vehicle.",
+  "veh_spawned": "vehicle has been released from the Garage.",
+  "veh_blocked": "Unable to retrieve vehicle, Please try again!",
+  "veh_stored": "Vehicle stored successfully."
+}

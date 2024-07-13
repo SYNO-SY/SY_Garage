@@ -1,0 +1,32 @@
+.plate_text {
+    position: absolute;
+    font-size: 32px;
+}
+
+.button {
+    box-shadow: rgba(132, 59, 206, 0.337) 0px 4px 24px;
+    border: 1px solid;
+
+    &:disabled,
+    &[data-disabled] {
+        border-color: light-dark(var(--mantine-color-gray-3),
+                var(--mantine-color-dark-4));
+        background-color: transparent;
+    }
+}
+
+.fine_card {
+    width: 180px;
+    border: 1px solid rgb(123 46 218 / 15%);
+    border-radius: 15px;
+    background-color: rgb(123 46 218 / 15%);
+    box-shadow: rgba(169, 84, 255, 0.552) 0px 4px 24px;
+}
+
+.fine_text {
+    text-shadow: rgba(118, 255, 84, 0.552) 0px 4px 24px;
+}
+
+.heading_text {
+    text-shadow: rgba(255, 255, 255, 0.552) 0px 4px 24px;
+}

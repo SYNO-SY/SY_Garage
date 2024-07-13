@@ -1,0 +1,11 @@
+.ui_menu {
+  /* background-color: black; */
+  background-color: #030014;
+  height: 1000px;
+  width: 1800px;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  font-size: x-large;
+
+}

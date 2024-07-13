@@ -1,0 +1,37 @@
+{
+  "name": "SY_Garage",
+  "homepage": "web/build",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "start:game": "vite build --watch",
+    "build": "tsc && vite build && node copyImgFile.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.1.19",
+    "@mantine/core": "^7.10.2",
+    "@mantine/hooks": "^7.10.2",
+    "@mantine/notifications": "^7.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^2.2.0",
+    "postcss": "^8.4.30",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4"
+  }
+}

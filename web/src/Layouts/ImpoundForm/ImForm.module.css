@@ -1,0 +1,43 @@
+.ui_menu {
+  /* background-color: black; */
+  background-color: #030014;
+  height: 500px;
+  width: 530px;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  font-size: x-large;
+}
+
+.text_input {
+  font-weight: 500;
+}
+
+.select_dropdown {
+  border-radius: 10px;
+}
+
+
+/* Notification */
+.root {
+  background-color: var(--notification-color, var(--mantine-primary-color-filled));
+  height: 80px;
+
+  &::before {
+    background-color: var(--mantine-color-white);
+  }
+}
+
+.description,
+.title {
+
+  color: var(--mantine-color-white);
+}
+
+.closeButton {
+  color: var(--mantine-color-white);
+
+  @mixin hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
