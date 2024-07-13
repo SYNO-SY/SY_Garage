@@ -35,6 +35,8 @@ jobs:
       - name: Bundle files
         run: |
           mkdir -p ./temp/SY_Garage/web/
+          cp ./{LICENSE,Readme.md,fxmanifest.lua,init.lua,esx.sql} ./temp/ox_lib
+          cp -r ./{client,locales,server,shared} ./temp/ox_lib
           cp -r ./web/build ./temp/SY_Garage/web/
           cd ./temp && zip -r ../SY_Garage.zip ./SY_Garage
       - name: Create release
