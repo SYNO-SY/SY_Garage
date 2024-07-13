@@ -13,6 +13,10 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.ref }}
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.29.1
       - name: Get tag
         run: echo ::set-output name=VERSION_TAG::${GITHUB_REF/refs\/tags\//}
         id: get_tag
