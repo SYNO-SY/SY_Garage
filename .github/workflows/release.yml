@@ -8,11 +8,15 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
+    
       - name: Checkout source
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           ref: ${{ github.ref }}
+        - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 8.6.1
       - name: Get tag
         run: echo ::set-output name=VERSION_TAG::${GITHUB_REF/refs\/tags\//}
         id: get_tag
